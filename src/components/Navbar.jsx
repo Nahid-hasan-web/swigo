@@ -40,7 +40,7 @@ const Navbar = () => {
                         className="text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]"
                         to={"#"}
                       >
-                        All Products{" "}
+                        All Products
                       </Link>
                     </li>
                     <li>
@@ -48,7 +48,7 @@ const Navbar = () => {
                         className="text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]"
                         to={"#"}
                       >
-                        New Arrivals{" "}
+                        New Arrivals
                       </Link>
                     </li>
                     <li>

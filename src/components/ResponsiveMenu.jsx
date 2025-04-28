@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo.png";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const ResponsiveMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showItem ,setshwItem] = useState('')
   return (
     <>
       <nav
@@ -51,10 +53,32 @@ const ResponsiveMenu = () => {
         <div className="res_logo w-[150px]  mb-5">
           <img src={logo} alt="swigo" />
         </div>
-        <div className="menu_item  border-b-[1px] border-gray-200 py-3 "><h4 className="text-lg font-normal font-poppins flex justify-between items-center">Home </h4></div>
-        <div className="menu_item  border-b-[1px] border-gray-200 py-3 "><h4 className="text-lg font-normal font-poppins flex justify-between items-center">Shop <IoMdArrowDropdown className="text-2xl" /></h4></div>
-        <div className="menu_item  border-b-[1px] border-gray-200 py-3 "><h4 className="text-lg font-normal font-poppins flex justify-between items-center">Blogs <IoMdArrowDropdown className="text-2xl" /></h4></div>
-        <div className="menu_item  border-b-[1px] border-gray-200 py-3 "><h4 className="text-lg font-normal font-poppins flex justify-between items-center">Contact Us </h4></div>
+        <div className="menu_item  border-b-[1px] border-gray-200 py-3 ">
+          <Link className="text-lg font-normal font-poppins flex justify-between items-center">
+            Home{" "}
+          </Link>
+        </div>
+        <div className={`menu_item   duration-[.6s] border-b-[1px] border-gray-200 py-3 overflow-hidden ${showItem == 'shop'?'pb-[200px]':'pb-5'} `}>
+          <Link  onClick={ showItem == 'shop'? ()=>setshwItem(''): ()=>setshwItem('shop')} className="text-lg z-10  font-normal font-poppins flex justify-between items-center">
+            Shop <IoMdArrowDropdown className={`text-2xl ${showItem == 'shop'? ' rotate-[180deg]':' rotate-[0deg]' } duration-[.6s]`} />
+          </Link>
+          <div className={`w-full p-2 flex  flex-col gap-5 text-[15px] absolute  ${showItem == 'shop'? 'scale-[1] duration-[1s]':'scale-[0] duration-[.3s]' } `}>
+            <Link to={'#'}>All Products</Link>
+            <Link to={'#'}>New Arrivals</Link>
+            <Link to={'#'}>Best Sellers</Link>
+            <Link to={'#'}>Specific Product Category</Link>
+          </div>
+        </div>
+        <div className="menu_item  border-b-[1px] border-gray-200 py-3 ">
+          <Link className="text-lg font-normal font-poppins flex justify-between items-center">
+            Blogs <IoMdArrowDropdown className="text-2xl" />
+          </Link>
+        </div>
+        <div className="menu_item  border-b-[1px] border-gray-200 py-3 ">
+          <Link className="text-lg font-normal font-poppins flex justify-between items-center">
+            Contact Us{" "}
+          </Link>
+        </div>
       </div>
     </>
   );
