@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 const ResponsiveMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showItem ,setshwItem] = useState('')
+  const [showBlogItem ,setBlogItem] = useState('')
+  console.log(showItem)
   return (
     <>
       <nav
@@ -60,19 +62,25 @@ const ResponsiveMenu = () => {
         </div>
         <div className={`menu_item   duration-[.6s] border-b-[1px] border-gray-200 py-3 overflow-hidden ${showItem == 'shop'?'pb-[200px]':'pb-5'} `}>
           <Link  onClick={ showItem == 'shop'? ()=>setshwItem(''): ()=>setshwItem('shop')} className="text-lg z-10  font-normal font-poppins flex justify-between items-center">
-            Shop <IoMdArrowDropdown className={`text-2xl ${showItem == 'shop'? ' rotate-[180deg]':' rotate-[0deg]' } duration-[.6s]`} />
+            Shop <IoMdArrowDropdown className={`text-2xl ${showItem == 'shop'? ' rotate-[180deg] text-brandColor':' rotate-[0deg] text-primary' } duration-[.6s]`} />
           </Link>
-          <div className={`w-full p-2 flex  flex-col gap-5 text-[15px] absolute  ${showItem == 'shop'? 'scale-[1] duration-[1s]':'scale-[0] duration-[.3s]' } `}>
+          <div className={`w-full p-2 flex  flex-col gap-5 text-[15px] absolute  ${showItem == 'shop'? 'scale-[1] duration-[1s] ':'scale-[0] duration-[.3s]' } `}>
             <Link to={'#'}>All Products</Link>
             <Link to={'#'}>New Arrivals</Link>
             <Link to={'#'}>Best Sellers</Link>
             <Link to={'#'}>Specific Product Category</Link>
           </div>
         </div>
-        <div className="menu_item  border-b-[1px] border-gray-200 py-3 ">
-          <Link className="text-lg font-normal font-poppins flex justify-between items-center">
-            Blogs <IoMdArrowDropdown className="text-2xl" />
+        <div className={`menu_item   duration-[.6s] border-b-[1px] border-gray-200 py-3 overflow-hidden ${showBlogItem == 'blog'?'pb-[200px]':'pb-5'} `}>
+          <Link  onClick={ showBlogItem == 'blog'? ()=>setBlogItem(''): ()=>setBlogItem('blog')} className="text-lg z-10  font-normal font-poppins flex justify-between items-center">
+            Blog <IoMdArrowDropdown className={`text-2xl ${showBlogItem == 'blog'? ' rotate-[180deg] text-brandColor':' rotate-[0deg] text-primary' } duration-[.6s]`} />
           </Link>
+          <div className={`w-full p-2 flex  flex-col gap-5 text-[15px] absolute  ${showBlogItem == 'blog'? 'scale-[1] duration-[1s] ':'scale-[0] duration-[.3s]' } `}>
+            <Link to={'#'}>All Products</Link>
+            <Link to={'#'}>New Arrivals</Link>
+            <Link to={'#'}>Best Sellers</Link>
+            <Link to={'#'}>Specific Product Category</Link>
+          </div>
         </div>
         <div className="menu_item  border-b-[1px] border-gray-200 py-3 ">
           <Link className="text-lg font-normal font-poppins flex justify-between items-center">
