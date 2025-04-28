@@ -16,10 +16,58 @@ const Navbar = () => {
           {/* ------- menu items */}
           <div className="menu_items flex gap-[60px] items-center">
             <ul className='flex gap-5  text-[16px] font-normal  font-poppins'>
-              <li ><Link className='flex items-center gap-[7px] text-primary' to="#">Home <IoIosArrowDown/></Link></li>
-              <li ><Link className='flex items-center gap-[7px] text-primary' to="#">Pages <IoIosArrowDown/></Link></li>
-              <li ><Link className='flex items-center gap-[7px] text-primary' to="#">Shop <IoIosArrowDown/></Link></li>
-              <li ><Link className='flex items-center gap-[7px] text-primary' to="#">Blogs <IoIosArrowDown/></Link></li>
+              <li><Link className='flex items-center gap-[7px] text-primary' to="#">Home </Link></li>
+              <li className=' relative' >
+                <Link className='flex items-center gap-[7px] text-primary' to="#">Shop <IoIosArrowDown/></Link>
+                {/* Shop dropdown  */} 
+                
+              </li>
+              <li className=' relative group ' ><Link className='flex items-center gap-[7px] text-primary' to="#">Blogs <IoIosArrowDown/></Link>
+              <div className=' absolute top-[70px] left-[-900px] lg:w-[1200px]  bg-white  rounded-[5px] shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)]'>
+                  {/*  ----------- dropdown head  */}
+                  <div className="drp_head  w-full border-b-[1px] border-b-gray-300 flex">
+                      <div className="row1 w-[300px] p-[30px] border-r-[1px] border-gray-300"><h2 className='text-lg font-semibold font-poppins text-primary'>Taste the Stories</h2></div>
+                      <div className="row2 w-[300px] p-[30px] border-r-[1px] border-gray-300"><h2 className='text-lg  font-semibold font-poppins text-primary'>Recipes, Tips </h2></div>
+                      <div className="row3 w-[300px] p-[30px] border-r-[1px] border-gray-300"><h2 className='text-lg font-semibold font-poppins text-primary'>Flavor Chronicles</h2></div>
+                      <div className="row4 w-[300px] p-[30px]"><h2 className='text-lg  font-semibold font-poppins text-primary'>Flavor Chronicles</h2></div>
+                  </div>
+                  {/* ------------ derop down items */}
+                  <div className="drp_head  w-full flex">
+                      <div id='singel_row' className=" w-[300px] p-[30px] border-r-[1px] border-gray-300">
+                        <ul>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>Taste the Stories</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>Kitchen Chronicles</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>Flavor Insights</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary  hover:text-brandColor duration-[.2s]' to={'#'}>The Foodie Feed</Link></li>
+                        </ul>
+                      </div>
+                      <div id='singel_row' className=" w-[300px] p-[30px] border-r-[1px] border-gray-300">
+                        <ul>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}> Our Go-To Recipe</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}> Tips for Better Home Cooking</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}> Our Chef's Secrets</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary  hover:text-brandColor duration-[.2s]' to={'#'}>Creative Ways to Use Leftovers</Link></li>
+                        </ul>
+                      </div>
+                      <div id='singel_row' className=" w-[300px] p-[30px] border-r-[1px] border-gray-300">
+                        <ul>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>The Spicy Trail</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>Aromatic Adventures</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>Sweet Surrender</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary  hover:text-brandColor duration-[.2s]' to={'#'}>Umami Unveiled</Link></li>
+                        </ul>
+                      </div>
+                      <div id='singel_row' className=" w-[300px] p-[30px] border-r-[1px] border-gray-300">
+                        <ul>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>What's New on the Plate?</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>Local Gems</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>Foodie Hotspots</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary  hover:text-brandColor duration-[.2s]' to={'#'}>Behind the Scenes</Link></li>
+                        </ul>
+                      </div>
+                  </div>
+              </div>
+              </li>
               <li ><Link className='flex items-center gap-[7px] text-primary' to="#">Contact Us</Link></li>
             </ul>
             <div className="menu_buttons flex gap-[10px] ">
