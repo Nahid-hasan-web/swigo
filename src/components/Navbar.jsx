@@ -17,14 +17,20 @@ const Navbar = () => {
           <div className="menu_items flex gap-[60px] items-center">
             <ul className='flex gap-5  text-[16px] font-normal  font-poppins'>
               <li><Link className='flex items-center gap-[7px] text-primary' to="#">Home </Link></li>
-              <li className=' relative' >
+              <li className=' relative group' >
                 <Link className='flex items-center gap-[7px] text-primary' to="#">Shop <IoIosArrowDown/></Link>
                 {/* Shop dropdown  */} 
+                <ul className=' invisible opacity-0 group-hover:visible  group-hover:opacity-100 duration-[.4s] p-4 absolute top-[50px]  left-0 w-[300px] bg-white rounded-[5px]'>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>All Products  </Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>New Arrivals </Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]' to={'#'}>Best Sellers</Link></li>
+                          <li><Link className='text-[16px] font-normal font-poppins text-primary  hover:text-brandColor duration-[.2s]' to={'#'}>Specific Product Category</Link></li>
+               </ul>
                 
               </li>
               <li className=' relative group ' ><Link className='flex items-center gap-[7px] text-primary' to="#">Blogs <IoIosArrowDown/></Link>
               {/* ----------- droup down menu  */}
-              <div className=' absolute top-[70px] opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-[1s] left-[-900px] lg:w-[1200px]  bg-white  rounded-[5px] shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)]'>
+              <div className=' absolute top-[70px] opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-[s] left-[-900px] lg:w-[1200px]  bg-white  rounded-[5px] shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)]'>
                   {/*  ----------- dropdown head  */}
                   <div className="drp_head  w-full border-b-[1px] border-b-gray-300 flex">
                       <div className="row1 w-[300px] p-[30px] border-r-[1px] border-gray-300"><h2 className='text-lg font-semibold font-poppins text-primary'>Taste the Stories</h2></div>
