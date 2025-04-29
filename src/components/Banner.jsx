@@ -25,7 +25,7 @@ const Banner = () => {
     <>
       <section
         id="banner"
-        className="w-full h-screen pt-[224px] relative"
+        className="w-full h-screen pt-[237px] relative"
         style={{ background: `url("${bannerBg}")` }}
       >
         <div className="container ">

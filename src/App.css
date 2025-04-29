@@ -63,3 +63,15 @@
 .banner_main_slider .slick-dots .slick-active button{
     color: #7DA640;
 }
+#specialMenu:hover .productImage{
+    animation: rotate 6s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
