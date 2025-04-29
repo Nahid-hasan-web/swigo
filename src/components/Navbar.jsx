@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
-
 const Navbar = () => {
+
   return (
     <>
-      <nav className="main_menu pt-[19px]  absolute  top-0 left-0 w-full hidden lg:block">
+      <nav className="main_menu pt-[19px]  absolute  top-0 left-0 w-full hidden z-[100] lg:block">
         <div className="container">
           <div className="manu_row flex justify-between items-center">
             {/* ------- menu logo */}

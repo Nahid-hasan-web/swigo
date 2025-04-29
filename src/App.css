@@ -34,3 +34,32 @@
         right: 750px;
     } 
 }
+
+.banner_main_slider .slick-arrow{
+    position: absolute;
+    left: -110px;
+    font-size: 24px;
+    color: #7DA640;
+}
+.banner_main_slider .slick-prev{
+    top: 500px;
+}
+.banner_main_slider .slick-next{
+    top: 150px;
+}
+.banner_main_slider .slick-dots{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: -100px;
+}
+.banner_main_slider .slick-dots li button{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Lobster", sans-serif;
+    color: rgba(125, 166, 64, 0.40);
+    margin-bottom: 30px;
+}
+.banner_main_slider .slick-dots .slick-active button{
+    color: #7DA640;
+}
