@@ -17,6 +17,9 @@ const Todays_menu = () => {
                         <p className=' text-[16px] font-normal font-poppins text-[#666666] text-center'>Lorem ipsum dolor sit amet,
                         dipiscing elit, sed</p>
                     </div>
+                    <div className=' w-full h-full bg-[#0000002f] pt-[23px] absolute bottom-[-100%] left-0 duration-[1s] group-hover:bottom-[0]  bg-gradient-to-t from-slate-800  to-transparent'>
+
+                    </div>
                 </div>
 
             </div>
