@@ -1,0 +1,36 @@
+/* -------------- keyframes */
+.banner_leaf{
+    animation: bannerLeafMove 4s infinite linear;
+}
+
+@keyframes bannerLeafMove{
+    0%{
+        top: 25%;
+        right: 200px;
+    }
+    50%{
+        top: 30%;
+        right: 200px;
+    }
+}
+.banner_arrow{
+    animation: bannerArrow 4s infinite linear;
+}
+@keyframes bannerArrow{
+    0%{
+        top: 120px;
+        right: 750px;
+    }
+    25%{
+        top: 130px;
+        right: 700px;
+    }
+    50%{
+        top: 150px;
+        right: 750px;
+    }
+    100%{
+        top: 120px;
+        right: 750px;
+    } 
+}

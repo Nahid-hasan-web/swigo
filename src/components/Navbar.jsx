@@ -77,7 +77,7 @@ const Navbar = () => {
                     Blogs <IoIosArrowDown />
                   </Link>
                   {/* ----------- droup down menu  */}
-                  <div className=" absolute top-[70px] opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-[s] left-[-900px] lg:w-[1200px]  bg-white  rounded-[5px] shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)]">
+                  <div className=" absolute top-[70px] opacity-0 invisible group-hover:opacity-100 group-hover:visible  duration-[1s] left-[-900px] lg:w-[1200px]  bg-white  rounded-[5px] shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)]">
                     {/*  ----------- dropdown head  */}
                     <div className="drp_head  w-full border-b-[1px] border-b-gray-300 flex">
                       <div className="row1 w-[300px] p-[30px] border-r-[1px] border-gray-300">

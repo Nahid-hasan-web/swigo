@@ -2,16 +2,20 @@ import React from "react";
 import bannerBg from "../assets/images/banner_bg.png";
 import { Link } from "react-router-dom";
 import bannerSpoon from '../assets/images/bannerSpoon.png'
+import bannerLeaf from '../assets/images/bannerleaf.png'
+import bannerArrow from '../assets/images/bannerArrow.png'
 const Banner = () => {
+
+
   return (
     <>
       <section
         id="banner"
-        className="w-full lg:h-[930px] pt-[224px]"
+        className="w-full lg:h-[930px] pt-[224px] relative"
         style={{ background: `url("${bannerBg}")` }}
       >
-        <div className="container">
-          <div className="banner_Slider_row flex  justify-between">
+        <div className="container ">
+          <div className="banner_Slider_row flex gap-[448px]">
             <div className="banner_slider_Text">
               <h2 className="text-xl font-medium font-poppins text-[#FE9F10]">
                 High Quality Test Station
@@ -31,9 +35,13 @@ const Banner = () => {
             </div>
             <div className="banner_slider_iamge mt-[8px]">
               <img src={bannerSpoon} alt="" />
+              <div className="banner_leaf  absolute top-[25%]  right-[200px]">
+                <img src={bannerLeaf} alt="banner leaf" />
+              </div>
             </div>
           </div>
         </div>
+        <div className="banner_arrow absolute top-[120px] right-[750px]"><img src={bannerArrow} alt="bannerArrow" /></div>
       </section>
     </>
   );
