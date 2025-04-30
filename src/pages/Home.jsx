@@ -6,6 +6,8 @@ import Quality from "../components/Quality";
 import Ourmenu from "../components/Ourmenu";
 import Reservation from "../components/Reservation";
 import ChefCard from "../components/ChefCard";
+import FoodBlogCard from "../components/FoodBlogCard";
+import Map from "../components/Map";
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
       <Ourmenu />
       <Reservation />
       <ChefCard />
+      <FoodBlogCard />
+      <Map />
     </>
   );
 };

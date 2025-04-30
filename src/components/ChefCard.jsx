@@ -15,7 +15,7 @@ const ChefCard = () => {
           <img
             src={chef1} // replace with actual image path
             alt="Chef"
-            className="w-full h-[290px] object-cover"
+            className="w-full h-[320px] object-cover"
           />
           <div className="p-4 flex justify-between items-center">
             <div>
