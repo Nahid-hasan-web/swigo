@@ -1,7 +1,13 @@
 import React from 'react'
 import CommonHead from './Common/CommonHead'
 import q1 from '../assets/images/q1.png'
+import q2 from '../assets/images/q2.png'
+import q3 from '../assets/images/q3.png'
+import q4 from '../assets/images/q4.png'
 import house from '../assets/images/house.png'
+import glass from '../assets/images/glass.png'
+import cup  from '../assets/images/cup.png'
+import cak from '../assets/images/cak.png'
 const Quality = () => {
   return (
     <>
@@ -20,10 +26,19 @@ const Quality = () => {
                     </div>
                     {/* ------------ qulity singel item */}
                     <div className='w-[300px] h-[280px] group overflow-hidden relative  hover:scale-[1.1] duration-[1s]'>
-                        <img className=' duration-[1s] group-hover:opacity-100 opacity-0' src={q1} alt="qulity" />
+                        <img className=' duration-[1s] group-hover:opacity-100 opacity-0' src={q2} alt="qulity" />
                         <div className="qulity_texts flex flex-col  items-center duration-[1s]  group-hover:bg-[#7da640e8]  absolute top-0 left-0 p-10 ">
-                            <img src={house} className='w-[80px]' alt="hosue Image" />
-                            <h2 className='text-[20px] font-semibold font-poppins text-black my-4'>ResTauRant</h2>
+                            <img src={glass} className='w-[80px]' alt="hosue Image" />
+                            <h2 className='text-[20px] font-semibold font-poppins text-black my-4'>BBQ</h2>
+                            <p className='text-[16px] w-[213px] m-auto text-center font-normal font-poppins text-[#666666] group-hover:text-white '> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    {/* ------------ qulity singel item */}
+                    <div className='w-[300px] h-[280px] group overflow-hidden relative  hover:scale-[1.1] duration-[1s]'>
+                        <img className=' duration-[1s] group-hover:opacity-100 opacity-0' src={q3} alt="qulity" />
+                        <div className="qulity_texts flex flex-col  items-center duration-[1s]  group-hover:bg-[#7da640e8]  absolute top-0 left-0 p-10 ">
+                            <img src={cup} className='w-[80px]' alt="hosue Image" />
+                            <h2 className='text-[20px] font-semibold font-poppins text-black my-4'>Cafe</h2>
                             <p className='text-[16px] w-[213px] m-auto text-center font-normal font-poppins text-[#666666] group-hover:text-white '> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>
@@ -31,17 +46,8 @@ const Quality = () => {
                     <div className='w-[300px] h-[280px] group overflow-hidden relative  hover:scale-[1.1] duration-[1s]'>
                         <img className=' duration-[1s] group-hover:opacity-100 opacity-0' src={q1} alt="qulity" />
                         <div className="qulity_texts flex flex-col  items-center duration-[1s]  group-hover:bg-[#7da640e8]  absolute top-0 left-0 p-10 ">
-                            <img src={house} className='w-[80px]' alt="hosue Image" />
-                            <h2 className='text-[20px] font-semibold font-poppins text-black my-4'>ResTauRant</h2>
-                            <p className='text-[16px] w-[213px] m-auto text-center font-normal font-poppins text-[#666666] group-hover:text-white '> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    {/* ------------ qulity singel item */}
-                    <div className='w-[300px] h-[280px] group overflow-hidden relative  hover:scale-[1.1] duration-[1s]'>
-                        <img className=' duration-[1s] group-hover:opacity-100 opacity-0' src={q1} alt="qulity" />
-                        <div className="qulity_texts flex flex-col  items-center duration-[1s]  group-hover:bg-[#7da640e8]  absolute top-0 left-0 p-10 ">
-                            <img src={house} className='w-[80px]' alt="hosue Image" />
-                            <h2 className='text-[20px] font-semibold font-poppins text-black my-4'>ResTauRant</h2>
+                            <img src={cak} className='w-[80px]' alt="hosue Image" />
+                            <h2 className='text-[20px] font-semibold font-poppins text-black my-4'>Dessert</h2>
                             <p className='text-[16px] w-[213px] m-auto text-center font-normal font-poppins text-[#666666] group-hover:text-white '> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </div>

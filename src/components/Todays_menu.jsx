@@ -1,6 +1,9 @@
 import React from "react";
 import CommonHead from "./Common/CommonHead";
 import pasta from "../assets/images/pasta.png";
+import bbq from "../assets/images/bbq.png";
+import dal from "../assets/images/dal.png";
+import burger from "../assets/images/burger copy.png";
 import bins from '../assets/images/bins.png'
 import { FiShoppingCart } from "react-icons/fi";
 
@@ -43,14 +46,14 @@ const Todays_menu = () => {
           {/* -------- singel menu item */}
           <div className="singelmenu_item relative group   w-[270px] h-[351px] rounded-[10px]  overflow-hidden shadow-[0px_8px_16px_-2px_rgba(0,_0,_0,_0.1)] ">
             <div className="w-full overflow-hidden relative">
-              <img src={pasta} alt="pasta" />
+              <img src={bbq} alt="pasta" />
               <div className="topslae  z-10 px-[9px] py-[3px] bg-[#FE9F10] absolute top-0 left-0 text-[12px] font-poppins font-semibold text-[#fff] rounded-br-[10px]">
                 TOP SALE
               </div>
             </div>
             <div className=" w-full h-[130px] bg-white pt-[23px] absolute bottom-[0] left-0 duration-[.7s] group-hover:bottom-[-100%] ">
               <h2 className="text-xl font-semibold font-poppins text-[#222222] text-center mb-[10px]">
-                Pasta
+                BBQ
               </h2>
               <p className=" text-[16px] font-normal font-poppins text-[#666666] text-center">
                 Lorem ipsum dolor sit amet, dipiscing elit, sed
@@ -73,14 +76,14 @@ const Todays_menu = () => {
           {/* -------- singel menu item */}
           <div className="singelmenu_item relative group   w-[270px] h-[351px] rounded-[10px]  overflow-hidden shadow-[0px_8px_16px_-2px_rgba(0,_0,_0,_0.1)] ">
             <div className="w-full overflow-hidden relative">
-              <img src={pasta} alt="pasta" />
+              <img src={dal} alt="pasta" />
               <div className="topslae  z-10 px-[9px] py-[3px] bg-[#FE9F10] absolute top-0 left-0 text-[12px] font-poppins font-semibold text-[#fff] rounded-br-[10px]">
                 TOP SALE
               </div>
             </div>
             <div className=" w-full h-[130px] bg-white pt-[23px] absolute bottom-[0] left-0 duration-[.7s] group-hover:bottom-[-100%] ">
               <h2 className="text-xl font-semibold font-poppins text-[#222222] text-center mb-[10px]">
-                Pasta
+                Dal
               </h2>
               <p className=" text-[16px] font-normal font-poppins text-[#666666] text-center">
                 Lorem ipsum dolor sit amet, dipiscing elit, sed
@@ -103,14 +106,14 @@ const Todays_menu = () => {
           {/* -------- singel menu item */}
           <div className="singelmenu_item relative group   w-[270px] h-[351px] rounded-[10px]  overflow-hidden shadow-[0px_8px_16px_-2px_rgba(0,_0,_0,_0.1)] ">
             <div className="w-full overflow-hidden relative">
-              <img src={pasta} alt="pasta" />
+              <img src={burger} alt="pasta" />
               <div className="topslae  z-10 px-[9px] py-[3px] bg-[#FE9F10] absolute top-0 left-0 text-[12px] font-poppins font-semibold text-[#fff] rounded-br-[10px]">
                 TOP SALE
               </div>
             </div>
             <div className=" w-full h-[130px] bg-white pt-[23px] absolute bottom-[0] left-0 duration-[.7s] group-hover:bottom-[-100%] ">
               <h2 className="text-xl font-semibold font-poppins text-[#222222] text-center mb-[10px]">
-                Pasta
+                Burger
               </h2>
               <p className=" text-[16px] font-normal font-poppins text-[#666666] text-center">
                 Lorem ipsum dolor sit amet, dipiscing elit, sed
