@@ -8,6 +8,9 @@ import tomato from '../assets/images/tomato.png'
 
 
 const Footer = () => {
+
+
+    
   return (
    <>
 
@@ -124,7 +127,12 @@ const Footer = () => {
     <div className="toamto  absolute bottom-0 left-0">
         <img src={tomato} alt="" />
     </div>
+    
+
+
+    
     </footer>
+
    </>
   )
 }
