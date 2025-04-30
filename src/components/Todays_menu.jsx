@@ -8,11 +8,11 @@ const Todays_menu = () => {
     <section className="bg-[#F4FDE7] pt-[60px] pb-[393px] lg:pt-[100px] ">
       <div className="container">
         <CommonHead CommonHead={"Today's Menu"} />
-        <div className="nahid_todays_menu_row flex gap-[30px] justify-center ronded-[10px] overflow-hidden ">
+        <div className="nahid_todays_menu_row mt-[50px] flex gap-[30px] justify-center ronded-[10px] overflow-hidden ">
           <div className="singelmenu_item relative group   w-[270px] h-[351px] rounded-[10px]  overflow-hidden shadow-[0px_8px_16px_-2px_rgba(0,_0,_0,_0.1)] ">
             <div className="w-full overflow-hidden relative">
               <img src={pasta} alt="pasta" />
-              <div className="topslae  px-[9px] py-[3px] bg-[#FE9F10] absolute top-0 left-0 text-[12px] font-poppins font-semibold text-[#fff] rounded-br-[10px]">
+              <div className="topslae  z-10 px-[9px] py-[3px] bg-[#FE9F10] absolute top-0 left-0 text-[12px] font-poppins font-semibold text-[#fff] rounded-br-[10px]">
                 TOP SALE
               </div>
             </div>
