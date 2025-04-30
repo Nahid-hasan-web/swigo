@@ -4,7 +4,7 @@ import pasta from "../assets/images/pasta.png";
 import bbq from "../assets/images/bbq.png";
 import dal from "../assets/images/dal.png";
 import burger from "../assets/images/burger copy.png";
-import bins from '../assets/images/bins.png'
+import bins from "../assets/images/bins.png";
 import { FiShoppingCart } from "react-icons/fi";
 
 const Todays_menu = () => {
@@ -38,8 +38,10 @@ const Todays_menu = () => {
                   <h2 className="text-xl font-poppins font-bold text-[#FE9F10]">
                     $35.00
                   </h2>
-                              </div>
-                              <button className=" w-[45px] h-[45px] active:scale-[1.1]  rounded-[6px] bg-white flex justify-center items-center text-brandColor hover:text-white hover:bg-brandColor duration-[.4s]"><FiShoppingCart/></button>
+                </div>
+                <button className=" w-[45px] h-[45px] active:scale-[1.1]  rounded-[6px] bg-white flex justify-center items-center text-brandColor hover:text-white hover:bg-brandColor duration-[.4s]">
+                  <FiShoppingCart />
+                </button>
               </div>
             </div>
           </div>
@@ -68,8 +70,10 @@ const Todays_menu = () => {
                   <h2 className="text-xl font-poppins font-bold text-[#FE9F10]">
                     $35.00
                   </h2>
-                              </div>
-                              <button className=" w-[45px] h-[45px] active:scale-[1.1]  rounded-[6px] bg-white flex justify-center items-center text-brandColor hover:text-white hover:bg-brandColor duration-[.4s]"><FiShoppingCart/></button>
+                </div>
+                <button className=" w-[45px] h-[45px] active:scale-[1.1]  rounded-[6px] bg-white flex justify-center items-center text-brandColor hover:text-white hover:bg-brandColor duration-[.4s]">
+                  <FiShoppingCart />
+                </button>
               </div>
             </div>
           </div>
@@ -98,8 +102,10 @@ const Todays_menu = () => {
                   <h2 className="text-xl font-poppins font-bold text-[#FE9F10]">
                     $35.00
                   </h2>
-                              </div>
-                              <button className=" w-[45px] h-[45px] active:scale-[1.1]  rounded-[6px] bg-white flex justify-center items-center text-brandColor hover:text-white hover:bg-brandColor duration-[.4s]"><FiShoppingCart/></button>
+                </div>
+                <button className=" w-[45px] h-[45px] active:scale-[1.1]  rounded-[6px] bg-white flex justify-center items-center text-brandColor hover:text-white hover:bg-brandColor duration-[.4s]">
+                  <FiShoppingCart />
+                </button>
               </div>
             </div>
           </div>
@@ -128,8 +134,10 @@ const Todays_menu = () => {
                   <h2 className="text-xl font-poppins font-bold text-[#FE9F10]">
                     $35.00
                   </h2>
-                              </div>
-                              <button className=" w-[45px] h-[45px] active:scale-[1.1]  rounded-[6px] bg-white flex justify-center items-center text-brandColor hover:text-white hover:bg-brandColor duration-[.4s]"><FiShoppingCart/></button>
+                </div>
+                <button className=" w-[45px] h-[45px] active:scale-[1.1]  rounded-[6px] bg-white flex justify-center items-center text-brandColor hover:text-white hover:bg-brandColor duration-[.4s]">
+                  <FiShoppingCart />
+                </button>
               </div>
             </div>
           </div>
