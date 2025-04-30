@@ -5,6 +5,7 @@ import Todays_menu from "../components/Todays_menu";
 import Quality from "../components/Quality";
 import Ourmenu from "../components/Ourmenu";
 import Reservation from "../components/Reservation";
+import ChefCard from "../components/ChefCard";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Quality />
       <Ourmenu />
       <Reservation />
+      <ChefCard />
     </>
   );
 };
