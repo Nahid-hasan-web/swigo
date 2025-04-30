@@ -12,7 +12,7 @@ const ResponsiveMenu = () => {
     <>
       <nav
         id="respnsiveMenu"
-        className="lg:hidden absolute top-0 left-0  w-full px-5 py-5"
+        className="lg:hidden absolute top-0 left-0  w-full px-5 py-5 z-[100]"
       >
         <div className="container">
           <div className="menu_row  flex justify-between items-center">
@@ -47,7 +47,7 @@ const ResponsiveMenu = () => {
         {/* ------------- slide menus  */}
       </nav>
       <div
-        className={`w-[310px]  h-screen bg-red-400  absolute top-0 p-3 ${
+        className={`w-[310px]  h-screen bg-red-400  absolute z-[200] top-0 p-3 ${
           showMenu ? "left-0 bg-red-400" : "left-[-400px]"
         }  duration-[.4s] bg-white shadow-[6px_-1px_10px_-3px_rgba(149,_157,_165,_0.2)]
 `}

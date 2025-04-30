@@ -6,10 +6,10 @@ import { FiShoppingCart } from "react-icons/fi";
 
 const Todays_menu = () => {
   return (
-    <section className="bg-[#F4FDE7] pt-[60px] pb-[393px] lg:pt-[100px]  relative">
+    <section className="bg-[#F4FDE7] pt-[60px] pb-[100px] lg:pt-[100px]  relative">
       <div className="container">
         <CommonHead CommonHead={"Today's Menu"} />
-        <div className="nahid_todays_menu_row mt-[50px] flex gap-[30px] justify-center ronded-[10px] overflow-hidden ">
+        <div className="nahid_todays_menu_row mt-[50px] flex flex-wrap gap-[30px] justify-center ronded-[10px] overflow-hidden ">
           {/* -------- singel menu item */}
           <div className="singelmenu_item relative group   w-[270px] h-[351px] rounded-[10px]  overflow-hidden shadow-[0px_8px_16px_-2px_rgba(0,_0,_0,_0.1)] ">
             <div className="w-full overflow-hidden relative">
@@ -132,7 +132,7 @@ const Todays_menu = () => {
           </div>
         </div>
       </div>
-      <div className=" absolute  top-10  right-20">
+      <div className=" absolute  hidden lg:block top-10  right-20">
         <img src={bins} alt="bins" />
       </div>
     </section>

@@ -9,7 +9,7 @@ const Special_Menu = () => {
         <section id='Special Menu ' className='pt-[60px] lg:pt-[100px]  relative'>
             <div className="container">
                 <CommonHead CommonHead={'Special Menu'} />
-                <div className="Special_menuRow  flex gap-[30px] justify-center mt-[50px]">
+                <div className="Special_menuRow  flex gap-[30px] flex-wrap justify-center mt-[50px]">
                     <Menu_singelCard />
                     <Menu_singelCard />
                     <Menu_singelCard />
@@ -17,10 +17,10 @@ const Special_Menu = () => {
                 </div>
             </div>
             {/* ------------ position elements */}
-            <div className='burger  absolute  bottom-0 left-0'>
+            <div className='burger hidden lg:block  absolute  bottom-0 left-0'>
                 <img src={burger} alt="burger image" />
             </div>
-            <div className='bins  absolute  top-[50px] right-[30px]'>
+            <div className='bins  hidden lg:block absolute  top-[50px] right-[30px]'>
                 <img src={bins} alt="burger image" />
             </div>
         </section>
