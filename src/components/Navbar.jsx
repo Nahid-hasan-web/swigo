@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
+import Cart from "./Cart";
 const Navbar = () => {
 
   return (
@@ -285,6 +286,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        <Cart />
       </nav>
     </>
   );
