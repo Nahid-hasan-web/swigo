@@ -6,6 +6,7 @@ import { FaRegUser } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
 import Cart from "./Cart";
 const Navbar = () => {
+  const [showCart , setShowCart] = React.useState(false);
 
   return (
     <>
@@ -279,14 +280,14 @@ const Navbar = () => {
                 <button className="w-[45px] h-[45px] rounded-[6px] bg-[#fff] flex justify-center items-center hover:bg-brandColor hover:text-white duration-[1s] text-[#222]">
                   <FaRegUser />
                 </button>
-                <button className="w-[45px]  h-[45px] rounded-[6px] bg-[#fff] flex justify-center items-center hover:bg-brandColor hover:text-white duration-[1s] text-[#222]">
+                <button onClick={()=>setShowCart(!showCart)} className="w-[45px]  h-[45px] rounded-[6px] bg-[#fff] flex justify-center items-center hover:bg-brandColor hover:text-white duration-[1s] text-[#222]">
                   <BsHandbag />
                 </button>
               </div>
             </div>
           </div>
         </div>
-                  <Cart />
+        <Cart toggleCartButton={showCart}  closeCart={()=>setShowCart(!showCart)} />
      
       </nav>
     </>

@@ -1,9 +1,11 @@
 import React from "react";
+import { CiCircleRemove } from "react-icons/ci";
 
-const Cart = () => {
+const Cart = ({ toggleCartButton ,  closeCart}) => {
   return (
     <>
-      <div class=" absolute top-20 right-10  w-[320px] bg-white border border-lime-300 p-4 rounded-md font-sans">
+      <div class={` ${toggleCartButton? 'scale-[1]': 'scale-0'}  duration-[.4s]   absolute top-20 right-10  w-[320px] bg-white border border-lime-300 p-4 rounded-md font-sans`}>
+        <div onClick={closeCart} className="flex justify-end"><CiCircleRemove className="text-2xl mb-5 text-gray-400 hover:text-red-500" /></div>
         <div class="space-y-4">
           <div class="flex items-center gap-4">
             <img
