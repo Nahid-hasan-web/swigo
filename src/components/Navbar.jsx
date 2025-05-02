@@ -1,13 +1,22 @@
-import React from "react";
+import React, { use, useEffect } from "react";
 import logo from "../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
 import Cart from "./Cart";
 const Navbar = () => {
   const [showCart , setShowCart] = React.useState(false);
+  const [navcolor, setNavColor] = React.useState('');
+  const myPath = useLocation()
 
+  useEffect(()=>{
+  if(myPath.pathname == '/'){
+    setNavColor('text-primary')
+  }else{
+    setNavColor('text-white')
+  }
+},[])
   return (
     <>
       <nav className="main_menu pt-[19px]  absolute  top-0 left-0 w-full hidden z-[100] lg:block">
@@ -22,7 +31,7 @@ const Navbar = () => {
               <ul className="flex gap-5  text-[16px] font-normal  font-poppins">
                 <li>
                   <Link
-                    className="flex items-center gap-[7px] text-primary"
+                    className={`flex items-center gap-[7px]  ${navcolor}`}
                     to="#"
                   >
                     Home{" "}
@@ -30,7 +39,7 @@ const Navbar = () => {
                 </li>
                 <li className=" relative group">
                   <Link
-                    className="flex items-center gap-[7px] text-primary"
+                    className={`flex items-center gap-[7px]  ${navcolor}`}
                     to="#"
                   >
                     Shop <IoIosArrowDown />
@@ -73,7 +82,7 @@ const Navbar = () => {
                 </li>
                 <li className=" relative group ">
                   <Link
-                    className="flex items-center gap-[7px] text-primary"
+                    className={`flex items-center gap-[7px]   ${navcolor}`}
                     to="#"
                   >
                     Blogs <IoIosArrowDown />
@@ -269,7 +278,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    className="flex items-center gap-[7px] text-primary"
+                    className={`flex items-center gap-[7px]  ${navcolor}`}
                     to="#"
                   >
                     Contact Us
