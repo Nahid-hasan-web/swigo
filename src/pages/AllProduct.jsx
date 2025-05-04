@@ -3,7 +3,7 @@ import BreadCrumb from "../components/Common/BreadCrumb";
 import CatHead from "../components/Common/CatHead";
 import { FaStar } from "react-icons/fa";
 import { FaMotorcycle } from "react-icons/fa6";
-
+import singelBurger from "../assets/images/singelBurger.jpg";
 const AllProduct = () => {
   return (
     <>
@@ -66,9 +66,26 @@ const AllProduct = () => {
               </div>
             </div>
             {/* ----------- Product singel card */}
-            <div className="product head mb-4 lg:mb-6  flex justify-between  w-full ">
-              <h2 className="text-xl font-semibold font-poppins text-black ">Search Results</h2>
-              <h3 className="text-[16px] font-medium font-poppins text-[#666666]">Search: 51,740 items</h3>
+            <div className="w-full">
+              <div className="product head mb-4 lg:mb-6  flex justify-between  w-full ">
+                <h2 className="text-xl font-semibold font-poppins text-black ">
+                  Search Results
+                </h2>
+                <h3 className="text-[16px] font-medium font-poppins text-[#666666]">
+                  Search: 51,740 items
+                </h3>
+              </div>
+              <div className="singelPorductItem  w-full h-[108px] border-[1px] border-gray-300 overflow-hidden rounded-[10px] mb-5">
+                <div className="produt_image w-[110px]">
+                  <img src={singelBurger} alt="singelProduct" />
+                </div>
+                <div className="my-5 flex justify-between items-center">
+                  <div className="ProductName">
+              
+                    
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
