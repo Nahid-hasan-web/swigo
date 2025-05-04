@@ -3,6 +3,7 @@ import BreadCrumb from "../components/Common/BreadCrumb";
 import CatHead from "../components/Common/CatHead";
 import singelBurger from "../assets/images/singelBurger.jpg";
 import { FaStar } from "react-icons/fa";
+import { MdDeliveryDining } from "react-icons/md";
 
 const AllProduct = () => {
   return (
@@ -66,7 +67,7 @@ const AllProduct = () => {
               </div>
             </div>
             {/* ----------- Product singel card */}
-            <div className="w-full">
+            <div className="w-[800px]">
               <div className="product head mb-4 lg:mb-6  flex justify-between  w-full ">
                 <h2 className="text-xl font-semibold font-poppins text-black ">
                   Search Results
@@ -75,15 +76,48 @@ const AllProduct = () => {
                   Search: 51,740 items
                 </h3>
               </div>
-              <div className="singelPorductItem  flex  items-start w-full h-[108px] border-[1px] border-gray-300 overflow-hidden rounded-[10px] mb-5">
+              {/* -------- product singel items */}
+              <div className="singelPorductItem  flex  items-start w-full  border-[1px] border-gray-300 overflow-hidden rounded-[10px] mb-5">
                 <div className="produt_image w-[110px]">
                   <img src={singelBurger} alt="singelProduct" />
                 </div>
-                <div className="my-3 w-full px-5 flex justify-between items-center">
-                  <div className="ProductName">
-                    <h2 className="text-[16px] font-poppins font-semibold text-primary hover:text-brandColor duration-[.4s]">Double Patty Burger</h2>
+                {/* ---------- product text */}
+                <div className=" w-full">
+                  <div className="my-3 w-full px-5 flex justify-between items-center">
+                    <div className="ProductName">
+                      <h2 className="text-[16px] font-poppins font-semibold text-primary hover:text-brandColor duration-[.4s]">
+                        Double Patty Burger
+                      </h2>
+                    </div>
+                    <div className=" py-[2px] px-[4px] rounded-[5px]  bg-[#FE9F10] flex items-center gap-1">
+                      <FaStar className="text-[14px] text-white" />{" "}
+                      <p className="text-[14px] font-normal font-poppins text-white">
+                        4.5
+                      </p>
+                    </div>
                   </div>
-                    <div className=" py-[2px] px-[4px] rounded-[5px]  bg-[#FE9F10] flex items-center gap-1"><FaStar className="text-[14px] text-white"/> <p className="text-[14px] font-normal font-poppins text-white">4.5</p></div>
+
+                  {/* --------- product details */}
+                  <div className="felx w-full justify-between px-5 mt-5 flex  ">
+                    {/* ----- product text */}
+                    <div className="produt_text flex items-center gap-5">
+                      <p className="text-[14px] font-normal font-poppins text-brandColor">
+                        <span className="text-primary">By</span> Burger Farm
+                      </p>
+                      <p className="text-[14px] font-normal font-poppins text-primary flex  gap-2 items-center">
+                        <span className="text-brandColor">
+                          <MdDeliveryDining className="text-2xl" />
+                        </span>{" "}
+                        Burger Farm
+                      </p>
+                    </div>
+                    {/* --------- product price */}
+                    <div className="product_price">
+                    <p className="text-[14px] font-normal font-poppins text-primary">
+                        <span className="text-brandColor">$15.00</span> For a one
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

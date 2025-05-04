@@ -49,7 +49,7 @@ const Navbar = () => {
                     <li>
                       <Link
                         className="text-[16px] font-normal font-poppins text-primary mb-[20px] inline-block  hover:text-brandColor duration-[.2s]"
-                        to={"#"}
+                        to={"/allProducts"}
                       >
                         All Products
                       </Link>
