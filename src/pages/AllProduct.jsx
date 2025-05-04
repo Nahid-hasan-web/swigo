@@ -1,9 +1,9 @@
 import React from "react";
 import BreadCrumb from "../components/Common/BreadCrumb";
 import CatHead from "../components/Common/CatHead";
-import { FaStar } from "react-icons/fa";
-import { FaMotorcycle } from "react-icons/fa6";
 import singelBurger from "../assets/images/singelBurger.jpg";
+import { FaStar } from "react-icons/fa";
+
 const AllProduct = () => {
   return (
     <>
@@ -75,15 +75,15 @@ const AllProduct = () => {
                   Search: 51,740 items
                 </h3>
               </div>
-              <div className="singelPorductItem  w-full h-[108px] border-[1px] border-gray-300 overflow-hidden rounded-[10px] mb-5">
+              <div className="singelPorductItem  flex  items-start w-full h-[108px] border-[1px] border-gray-300 overflow-hidden rounded-[10px] mb-5">
                 <div className="produt_image w-[110px]">
                   <img src={singelBurger} alt="singelProduct" />
                 </div>
-                <div className="my-5 flex justify-between items-center">
+                <div className="my-3 w-full px-5 flex justify-between items-center">
                   <div className="ProductName">
-              
-                    
+                    <h2 className="text-[16px] font-poppins font-semibold text-primary hover:text-brandColor duration-[.4s]">Double Patty Burger</h2>
                   </div>
+                    <div className=" py-[2px] px-[4px] rounded-[5px]  bg-[#FE9F10] flex items-center gap-1"><FaStar className="text-[14px] text-white"/> <p className="text-[14px] font-normal font-poppins text-white">4.5</p></div>
                 </div>
               </div>
             </div>
