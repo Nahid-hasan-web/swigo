@@ -9,7 +9,7 @@ import { FiShoppingCart } from "react-icons/fi";
 
 const Todays_menu = () => {
   return (
-    <section className="bg-[#F4FDE7] pt-[60px] pb-[100px] lg:pt-[100px]  relative">
+    <section className="bg-[#F4FDE7] pt-[60px] pb-[100px] lg:pt-[100px]  relative  mt-[100px]">
       <div className="container">
         <CommonHead CommonHead={"Today's Menu"} />
         <div className="nahid_todays_menu_row mt-[50px] flex flex-wrap gap-[30px] justify-center ronded-[10px] overflow-hidden ">
